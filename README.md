@@ -1,6 +1,6 @@
 # Kinten's ppx-expect
 
-ppx-expect (a.k.a. ppx-k-expect, `Ppx_k_expect`) is a framework for writing Cram-like tests in OCaml. It is heavily inspired by Janestreet's [Expect-test](https://github.com/janestreet/ppx_expect), which is an amazing framework in and of itself and is natively integrated with the Dune build system, but that integration means I couldn't use it in other OCaml build systems (e.g. B0) which was a source of frustration for me.
+ppx-expect (a.k.a. ppx-k-expect, `Ppx_k_expect`) is a framework for writing Cram-like tests in OCaml. It is heavily inspired by Janestreet's [Expect-test](https://github.com/janestreet/ppx_expect) (`janestreet/ppx_expect`), which is an amazing framework in and of itself and is natively integrated with the Dune build system, but that integration means I couldn't use it in other OCaml build systems (e.g. B0) which was a source of frustration for me.
 
 (From this point on, ppx-expect refers to Kinten's ppx-expect)
 
@@ -27,3 +27,9 @@ If the test results don't match, expect-test will prompt you to promote them, an
 +|  [%expect {| 1 1 |}]
 Promote? [y/n] y
 ```
+
+# Compare with `janestreet/ppx_expect`
+
+You may have already noticed some differences by reading the Walkthrough section. They are:
+
+- ppx-expect tests run in run-time, while `janestreet/ppx_expect` tests runs in compile-time (TBA: needs clarification)
