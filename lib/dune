@@ -1,0 +1,6 @@
+(library
+ (kind ppx_rewriter)
+ (libraries ppxlib re metaquot)
+ (preprocess (pps metaquot.ppx))
+ (public_name ppx-k-expect)
+ (name ppx_k_expect))
