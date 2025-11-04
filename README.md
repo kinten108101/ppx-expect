@@ -18,7 +18,7 @@ let%expect_test "test name" =
     [%expect {| 1 2 |}]
 ```
 
-into test blocks, and when you execute your program these test blocks will be run.
+into test blocks, and when you execute your program these test blocks will be run. (if ppx-expect is disabled, during preprocessing it will remove the `%expect_test` evaluation blocks)
 
 If the test results don't match, expect-test will prompt you to promote them, and edits will be applied to your source code in real-time
 
