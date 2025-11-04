@@ -14,16 +14,16 @@ If ppx-expect is enabled, during preprocessing it will expand `%expect_test` eva
 
 ```ocaml
 let%expect_test "test name" =
-    Printf.printf "%d %d" 1 2;
+    Printf.printf "%d %d" 1 1;
     [%expect {| 1 2 |}]
 ```
 
 into test blocks, and when you execute your program these test blocks will be run.
 
-If the test results don't match, expect-test will prompt you to promote them, and changes will be applied to your source code in real-time
+If the test results don't match, expect-test will prompt you to promote them, and edits will be applied to your source code in real-time
 
 ```
--|  [%expect {| |1 1 0 3| |}
-+|  [%expect {| |1 0 0 3| |}
+-|  [%expect {| 1 2 |}
++|  [%expect {| 1 1 |}
 Promote? [y/n] y
 ```
