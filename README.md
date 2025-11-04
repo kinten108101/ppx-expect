@@ -23,7 +23,7 @@ into test blocks, and when you execute your program these test blocks will be ru
 If the test results don't match, expect-test will prompt you to promote them, and edits will be applied to your source code in real-time
 
 ```
--|  [%expect {| 1 2 |}
-+|  [%expect {| 1 1 |}
+-|  [%expect {| 1 2 |}]
++|  [%expect {| 1 1 |}]
 Promote? [y/n] y
 ```
