@@ -19,7 +19,7 @@
  (name ppx-k-expect)
  (synopsis "A short synopsis")
  (description "A longer description")
- (depends ocaml patdiff metaquot)
+ (depends ocaml re ppxlib patdiff metaquot)
  (tags
   ("add topics" "to describe" your project)))
 
