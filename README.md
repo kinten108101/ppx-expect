@@ -4,7 +4,7 @@ ppx-expect (a.k.a. ppx-k-expect, `Ppx_k_expect`) is a framework for writing Cram
 
 (From this point on, ppx-expect refers to Kinten's ppx-expect)
 
-ppx-expect is "build system"-agnostic. Tests are conditionally instrumented into development binaries, then they are interactively run on execution.
+ppx-expect is "build system"-agnostic. Tests are conditionally instrumented into development binaries, then they are interactively run on execution in orchestration with other helper programs.
 
 # Walkthrough
 
