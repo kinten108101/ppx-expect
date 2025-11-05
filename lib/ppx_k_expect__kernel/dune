@@ -1,4 +1,0 @@
-(library
- (libraries patdiff)
- (public_name ppx-k-expect.kernel)
- (name ppx_k_expect__kernel))

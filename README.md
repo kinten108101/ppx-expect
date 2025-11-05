@@ -33,3 +33,7 @@ Promote? [y/n] y
 You may have already noticed some differences by reading the Walkthrough section. They are:
 
 - ppx-expect tests run in run-time, while `janestreet/ppx_expect` tests runs in compile-time (TBA: needs clarification)
+
+# Todo
+
+- [ ] convert OCaml lib deps to executable deps
