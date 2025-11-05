@@ -15,7 +15,7 @@ let expand__expect_test ~enabled ~ctxt =
   [%expr try
     Ppx_k_expect__kernel.mkdir_laxed "_build" 0o777;
     Ppx_k_expect__kernel.mkdir_laxed "_build/kexpect" 0o777;
-    let id = ref 0 in
+    let id = Ppx_k_expect__kernel.id in
     let ch = ref None in
     let it_end () =
       let id_ = !id in
